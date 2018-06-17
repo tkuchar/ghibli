@@ -22,6 +22,7 @@ body {
 }
 
 h1 {
+    padding-top: .5rem;
 	font-size: 2.5rem;
 	color: #7280a5;
 	text-transform: uppercase;
@@ -131,6 +132,10 @@ div:hover {
 	animation: fly-away 1s linear infinite;
 }
 
+#query {
+    display: inline-block;
+}
+
 input {
 	font-weight: bold;
 	background-color: #79a353;
@@ -198,22 +203,26 @@ input:hover {
     .main-image {
         width: 100%;
     }
+    h1 {
+        font-size: 1.5rem;
+    }
     input {
-        font-size: 1.2rem;
+        font-size: .6rem;
+        box-shadow: none;
     }
     p {
-        font-size: 1rem;
+        font-size: .7rem;
     }
     div {
         width: 100%;
     }
     .fixed-totoro {
-        height: 65px;
+        height: 29px;
     }
     .heh {
-    font-size: 1rem;
-    right: 85px;
-    bottom: 70px;
+    font-size: .4rem;
+    right: 41px;
+    bottom: 28px;
     }
 }
 
