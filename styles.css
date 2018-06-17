@@ -94,9 +94,9 @@ div:hover {
 	transform: scale(1.05);
 	transform: rotateZ(3deg);
 }
-	
 
-img {
+
+.main-image {
 	border-radius: 10px;
 	border: 3px solid #fdfaf3;
 	cursor: pointer;
@@ -153,12 +153,12 @@ input:hover {
 }
 
 @keyframes scale-in {
-	
+
 	0% {
 		transform: scale(.3);
 		opacity: 0;
 	}
-	
+
 	100% {
 		opacity: 1;
 		transform: scale(1);
@@ -168,13 +168,13 @@ input:hover {
 @keyframes fly-away {
 	0% {
 		transform: rotate(0deg) scale(1);
-		
+
 	}
-	
+
 	50% {
 		transform: rotate(180deg) scale(1.5);
 	}
-	
+
 	100% {
 		transform: rotate(360deg) scale(1);
 	}
@@ -184,16 +184,43 @@ input:hover {
 	0% {
 		transform: scale(1);
 	}
-	
+
 	50% {
 		transform: scale(1.2);
 	}
-	
+
 	100% {
 		transform: scale(1);
 	}
 }
-	
+
+@media screen and (max-width: 600px) {
+    .main-image {
+        width: 90%;
+        height: 25%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    input {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    div {
+        width: 100%;
+    }
+    .fixed-totoro {
+        height: 65px;
+    }
+    .heh {
+    font-size: 1rem;
+    right: 85px;
+    bottom: 70px;
+    }
+}
+
 
 
 

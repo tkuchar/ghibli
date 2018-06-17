@@ -2,16 +2,18 @@
 <html>
 
 <head>
+	<!-- Must include this meta property to enable responsive testing in Chrome -->
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title> Explore Ghibli </title>
 </head>
 
 	<body>
 	<section>
-		<img src="totoro.jpg">
-		
+		<img class="main-image" src="totoro.jpg">
+
 		<h1> Studio Ghibli Explorer </h1>
-		
+
 		<form id="query">
 			<input id="film_button" type="button" value="FILMS"> </input>
 			<input id="people_button" type="button" value="PEOPLE"> </input>
@@ -20,18 +22,17 @@
 			<input id="vehicles_button" type="button" value="VEHICLES"> </input>
 		</form>
 	</section>
-		
+
 	<section id="show_content"> </section>
-		
+
 	<img class="fixed-totoro" src="flying-totoro.png">
 	<p class="heh"> Heh heh! </p>
-		
+
 		<!-- Script for jsonp hack to bypass CORS for client -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
 		<script defer src="app.js"></script>
-		
+
 	</body>
-	
+
 </html>
 
-	
